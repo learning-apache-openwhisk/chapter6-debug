@@ -1,0 +1,26 @@
+{
+  "name": "chapter4",
+  "version": "1.0.0",
+  "description": "This is an  OpenWhisk runtime for  Golang.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sciabarracom/incubator-openwhisk-runtime-go.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sciabarracom/incubator-openwhisk-runtime-go/issues"
+  },
+  "homepage": "https://github.com/sciabarracom/incubator-openwhisk-runtime-go#readme",
+  "dependencies": {
+    "cheerio": "^0.22.0"
+  }
+}

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`validate email with snapshot 1`] = `
+Object {
+  "email": "michele.sciabarra@gmail.com",
+  "errors": Array [],
+  "message": Array [
+    "email: michele.sciabarra@gmail.com",
+  ],
+}
+`;
+

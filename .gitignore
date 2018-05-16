@@ -1,0 +1,4 @@
+node_modules/
+*.off
+*.old
+*.zip

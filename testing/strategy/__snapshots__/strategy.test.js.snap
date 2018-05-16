@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`email 1`] = `
+Object {
+  "email": "michele@sciabarra.com",
+  "errors": Array [],
+  "message": Array [
+    "email: michele@sciabarra.com",
+  ],
+}
+`;
+
+exports[`email 2`] = `
+Object {
+  "email": "michele.sciabarra.com",
+  "errors": Array [
+    "michele.sciabarra.com does not look like an email",
+  ],
+  "message": Array [],
+}
+`;
+
+exports[`email 3`] = `
+Object {
+  "email": "",
+  "errors": Array [
+    "missing email",
+  ],
+  "message": Array [],
+}
+`;
+
+exports[`email 4`] = `
+Object {
+  "errors": Array [
+    "missing email",
+  ],
+  "message": Array [],
+}
+`;
+
+exports[`name 1`] = `
+Object {
+  "errors": Array [],
+  "message": Array [
+    "name: Michele",
+  ],
+  "name": "Michele",
+}
+`;
+
+exports[`name 2`] = `
+Object {
+  "errors": Array [
+    "missing name",
+  ],
+  "message": Array [],
+}
+`;
+
+exports[`name 3`] = `
+Object {
+  "errors": Array [
+    "missing name",
+  ],
+  "message": Array [],
+}
+`;
+
+exports[`phone 1`] = `
+Object {
+  "errors": Array [
+    "123 does not look like a phone number",
+  ],
+  "message": Array [],
+  "phone": "123",
+}
+`;
+
+exports[`phone 2`] = `
+Object {
+  "errors": Array [],
+  "message": Array [
+    "phone: (123) 456-7890",
+  ],
+  "phone": "(123) 456-7890",
+}
+`;
+
+exports[`phone 3`] = `
+Object {
+  "errors": Array [
+    "pippolo plutolo does not look like a phone number",
+  ],
+  "message": Array [],
+  "phone": "pippolo plutolo",
+}
+`;
+
+exports[`phone 4`] = `
+Object {
+  "errors": Array [
+    "missing phone",
+  ],
+  "message": Array [],
+  "phone": "",
+}
+`;
+
+exports[`phone 5`] = `
+Object {
+  "errors": Array [
+    "missing phone",
+  ],
+  "message": Array [],
+}
+`;
+
+exports[`pipeline 1`] = `
+Object {
+  "errors": Array [
+    "missing phone",
+    "missing email",
+    "missing name",
+  ],
+  "message": Array [],
+}
+`;
+
+exports[`pipeline 2`] = `
+Object {
+  "email": "michele",
+  "errors": Array [
+    "123 does not look like a phone number",
+    "michele does not look like an email",
+    "missing name",
+  ],
+  "message": Array [],
+  "phone": "123",
+}
+`;
+
+exports[`pipeline 3`] = `
+Object {
+  "email": "michele@sciabarra.com",
+  "errors": Array [],
+  "message": Array [
+    "phone: 1234567890",
+    "email: michele@sciabarra.com",
+    "name: Michele",
+  ],
+  "name": "Michele",
+  "phone": "1234567890",
+}
+`;

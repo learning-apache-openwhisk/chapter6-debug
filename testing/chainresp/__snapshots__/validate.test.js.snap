@@ -1,0 +1,68 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`validate0 1`] = `
+Object {
+  "errors": Array [
+    "missing name",
+    "missing email",
+    "missing phone",
+  ],
+  "message": Array [],
+}
+`;
+
+exports[`validate1 1`] = `
+Object {
+  "errors": Array [
+    "missing email",
+    "missing phone",
+  ],
+  "message": Array [
+    "name: Michele",
+  ],
+  "name": "Michele",
+}
+`;
+
+exports[`validate2 1`] = `
+Object {
+  "email": "michele@sciabarra.com",
+  "errors": Array [
+    "missing phone",
+  ],
+  "message": Array [
+    "name: Michele",
+    "email: michele@sciabarra.com",
+  ],
+  "name": "Michele",
+}
+`;
+
+exports[`validate3 1`] = `
+Object {
+  "email": "michele@sciabarra.com",
+  "errors": Array [],
+  "message": Array [
+    "name: Michele",
+    "email: michele@sciabarra.com",
+    "phone: 1234567890",
+  ],
+  "name": "Michele",
+  "phone": "1234567890",
+}
+`;
+
+exports[`validate4 1`] = `
+Object {
+  "email": "michele.sciabarra.com",
+  "errors": Array [
+    "michele.sciabarra.com is not an email address",
+  ],
+  "message": Array [
+    "name: Michele",
+    "phone: 1234567890",
+  ],
+  "name": "Michele",
+  "phone": "1234567890",
+}
+`;
