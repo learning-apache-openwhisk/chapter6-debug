@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 
 function invoke(what) {
-    console.log("invoke: %j", what);
+    //console.log("invoke: %j", what);
 
     // locating stuff
     let base = path.dirname(__dirname)
@@ -10,7 +10,7 @@ function invoke(what) {
     //console.log(rest)
     let [prefix, file] = rest.split('-')
     let actual = base + '/' + pkg + '/' + prefix + '/' + file + '.js'
-    console.log(actual)
+    //console.log(actual)
 
     // calculating params
     let params = {}

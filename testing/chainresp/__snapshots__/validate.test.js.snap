@@ -1,5 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`validate 1`] = `
+Object {
+  "email": "michele.sciabarra.com",
+  "errors": Array [
+    "michele.sciabarra.com is not an email address",
+  ],
+  "message": Array [
+    "name: Michele",
+    "phone: 1234567890",
+  ],
+  "name": "Michele",
+  "phone": "1234567890",
+}
+`;
+
 exports[`validate0 1`] = `
 Object {
   "errors": Array [
@@ -45,21 +60,6 @@ Object {
   "message": Array [
     "name: Michele",
     "email: michele@sciabarra.com",
-    "phone: 1234567890",
-  ],
-  "name": "Michele",
-  "phone": "1234567890",
-}
-`;
-
-exports[`validate4 1`] = `
-Object {
-  "email": "michele.sciabarra.com",
-  "errors": Array [
-    "michele.sciabarra.com is not an email address",
-  ],
-  "message": Array [
-    "name: Michele",
     "phone: 1234567890",
   ],
   "name": "Michele",

@@ -1,5 +1,18 @@
 const ow = require('openwhisk')
 
+test('validate', () =>
+  ow().actions
+    .invoke({
+      name: 'testing/chainresp-validate',
+      params: {
+        name: 'Michele',
+        email: 'michele.sciabarra.com',
+        phone: '1234567890'
+      }
+    })
+    .then(res => expect(res).toMatchSnapshot()))
+
+
 test('validate0', () =>
   ow().actions
     .invoke({
@@ -39,14 +52,3 @@ test('validate3', () =>
     })
     .then(res => expect(res).toMatchSnapshot()))
 
-test('validate4', () =>
-  ow().actions
-    .invoke({
-      name: 'testing/chainresp-validate',
-      params: {
-        name: 'Michele',
-        email: 'michele.sciabarra.com',
-        phone: '1234567890'
-      }
-    })
-    .then(res => expect(res).toMatchSnapshot()))
