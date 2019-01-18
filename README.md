@@ -1,3 +1,3 @@
-# Chapter 7: DEBUG
+# Chapter 6: DEBUG
 
 
