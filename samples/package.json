@@ -1,0 +1,9 @@
+{
+  "name": "jest-samples",
+  "scripts": {
+    "test": "source ~/.wskprops; __OW_API_HOST=$APIHOST __OW_API_KEY=$AUTH jest"
+  },
+  "dependencies": {
+    "openwhisk": "^3.14.0"
+  }
+}

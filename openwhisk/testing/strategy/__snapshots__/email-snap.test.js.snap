@@ -10,3 +10,12 @@ Object {
 }
 `;
 
+exports[`validate email with snapshot 2`] = `
+Object {
+  "email": "michele.sciabarra.com",
+  "errors": Array [
+    "michele.sciabarra.com does not look like an email",
+  ],
+  "message": Array [],
+}
+`;

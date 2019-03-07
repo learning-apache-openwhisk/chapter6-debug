@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`invoke email validation 1`] = `
+Object {
+  "email": "michele.sciabarra.com",
+  "errors": Array [
+    "michele.sciabarra.com is not an email address",
+  ],
+  "message": Array [],
+}
+`;

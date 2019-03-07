@@ -7,7 +7,7 @@ function deployLib {
          fi
     fi
     base="${1%%.js}"
-    here="$(realpath .)"
+    here="$(pwd)"
     parent="$(dirname $here)"
     prefix="$(basename $here)"
     package="$(basename $parent)"
