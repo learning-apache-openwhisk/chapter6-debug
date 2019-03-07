@@ -3,7 +3,7 @@ const openwhisk = require("openwhisk")
 function main(args) {
   let ow = openwhisk()
   return ow.actions.invoke({
-    name: "patterndb/read",
+    name: "contactdb/read-document",
     result: true,
     blocking: true,
     params: {
