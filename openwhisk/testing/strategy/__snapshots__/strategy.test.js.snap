@@ -3,10 +3,10 @@
 exports[`email 1`] = `
 Object {
   "email": "michele@sciabarra.com",
-  "errors": Array [
-    "michele@sciabarra.com does not look like an email",
+  "errors": Array [],
+  "message": Array [
+    "email: michele@sciabarra.com",
   ],
-  "message": Array [],
 }
 `;
 
@@ -143,11 +143,10 @@ Object {
 exports[`pipeline 3`] = `
 Object {
   "email": "michele@sciabarra.com",
-  "errors": Array [
-    "michele@sciabarra.com does not look like an email",
-  ],
+  "errors": Array [],
   "message": Array [
     "phone: 1234567890",
+    "email: michele@sciabarra.com",
     "name: Michele",
   ],
   "name": "Michele",

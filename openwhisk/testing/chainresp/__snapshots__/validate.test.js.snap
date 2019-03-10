@@ -43,11 +43,11 @@ exports[`validate2 1`] = `
 Object {
   "email": "michele@sciabarra.com",
   "errors": Array [
-    "michele@sciabarra.com is not an email address",
     "missing phone",
   ],
   "message": Array [
     "name: Michele",
+    "email: michele@sciabarra.com",
   ],
   "name": "Michele",
 }
@@ -56,11 +56,10 @@ Object {
 exports[`validate3 1`] = `
 Object {
   "email": "michele@sciabarra.com",
-  "errors": Array [
-    "michele@sciabarra.com is not an email address",
-  ],
+  "errors": Array [],
   "message": Array [
     "name: Michele",
+    "email: michele@sciabarra.com",
     "phone: 1234567890",
   ],
   "name": "Michele",

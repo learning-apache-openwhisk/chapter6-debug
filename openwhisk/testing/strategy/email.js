@@ -2,6 +2,7 @@ const Validator = require("./lib/validator.js")
 
 function checkEmail(input) {
   var re = /\S+@\S+\.\S+/;
+  
   //var re = /\S+\.\S+@\S+\.\S+/;
   return re.test(input)	
 }
